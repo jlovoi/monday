@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS fragrances (
+  id serial primary key,
+  name text NOT NULL UNIQUE,
+  description text NOT NULL DEFAULT '',
+  category text NOT NULL DEFAULT '',
+  created_at timestamp DEFAULT NULL,
+  updated_at timestamp DEFAULT NULL,
+  image_url text NOT NULL DEFAULT ''
+);
